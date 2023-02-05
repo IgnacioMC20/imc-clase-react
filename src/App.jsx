@@ -1,5 +1,6 @@
 import { NewtonsCradle } from '@uiball/loaders'
 import { useState } from 'react'
+import { Resultado } from './components/Resultado';
 
 function App() {
 
@@ -42,11 +43,7 @@ function App() {
 
       {
         done && (
-          <div className="card bg-dark text-white">
-            <div className="body">
-              <h1>Tu IMC es: {Math.floor(imcForm.imc)}</h1>
-            </div>
-          </div>
+          <Resultado imcForm={imcForm} />
         )
       }
 
