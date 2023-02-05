@@ -1,0 +1,13 @@
+html, body{
+    background-color: black;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+
+    /* Centrar un div */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
